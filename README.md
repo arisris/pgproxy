@@ -6,13 +6,13 @@ Postgresql data proxy on deno. Useful for serverless application architecture
 By cloning this repo
 
 ```sh
-$ git clone https://github.com/arisris/pgproxy.git && cd pgproxy && deno run -A main.ts
+$ git clone https://github.com/arisris/pgproxy.git && cd pgproxy && deno run -A main.ts -d postgresql://postgres:postgres@localhost/test -s secretkey -p 8999
 ```
 
 By https
 
 ```sh
-$ deno run -A https://raw.githubusercontent.com/arisris/pgproxy/main/main.ts -p 8999
+$ deno run -A https://raw.githubusercontent.com/arisris/pgproxy/main/main.ts -d postgresql://postgres:postgres@localhost/test -s secretkey -p 8999
 ```
 
 ### Deno deploy
